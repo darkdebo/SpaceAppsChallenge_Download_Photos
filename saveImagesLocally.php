@@ -23,7 +23,7 @@ foreach ($data->collection->items as $element) {
     foreach ($object->links as $fin) {
         $urlImagenNASA = $fin->href;
         
-        $posInicioId = strpos($urlImagenNASA, 'image/') + 6;
+        $posInicioId = strpos($urlImagenNASA, 'Images/') + 6;
         $idImagen = substr($urlImagenNASA, $posInicioId);
         $posFinId = strpos($idImagen, '/');
         $idImagen = substr($idImagen, 0, $posFinId);
