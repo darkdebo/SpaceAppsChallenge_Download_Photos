@@ -36,3 +36,11 @@ No params. This process read all images in the database that not processed and u
 
 Example:
 http://localhost/api_fotos_nasa/changeImageSize.php
+
+# To resize images We used a PHP library by gumlet
+
+https://github.com/gumlet/php-image-resize
+
+# NASA API that We used
+
+https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
