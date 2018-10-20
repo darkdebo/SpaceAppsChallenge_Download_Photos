@@ -1,4 +1,6 @@
 <?php 
+// Guarda imágenes localmente y almacena datos relativos a la imagen en la base de datos
+
 require 'gestionDatabase.php';
 
 $busqueda = 'the%20earth';

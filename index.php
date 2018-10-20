@@ -1,5 +1,5 @@
 <?php 
-// FJAB 201018
+// Comunica con la api de la NASA y obtiene un json con imágenes y datos
 ini_set('display_errors', 1);
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
