@@ -23,12 +23,12 @@ foreach ($data->collection->items as $element) {
     foreach ($object->links as $fin) {
         $urlImagenNASA = $fin->href;
         
-        $posInicioId = strpos($urlImagenNASA, 'Images/') + 6;
+        $posInicioId = strpos($urlImagenNASA, 'image/') + 6;
         $idImagen = substr($urlImagenNASA, $posInicioId);
         $posFinId = strpos($idImagen, '/');
         $idImagen = substr($idImagen, 0, $posFinId);
         $nombreImagen = $idImagen . '.jpg';
-        $rutaCompleta = 'imagenes/' . $nombreImagen;
+        $rutaCompleta = 'Images/' . $nombreImagen;
 
         file_put_contents($rutaCompleta, file_get_contents($urlImagenNASA));
 
