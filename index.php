@@ -1,4 +1,5 @@
 <?php 
+// FJAB 201018
 ini_set('display_errors', 1);
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -10,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $searchWord = $_GET['searchWord'];
     }
     
-    if (isset($_GET['tipoResultado'])) {
-        $restultType = $_GET['tipoResultado'];
+    if (isset($_GET['restultType'])) {
+        $restultType = $_GET['restultType'];
     }
 
     if (isset($_GET['page'])) {
@@ -30,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     curl_close($curl);
 
+    //echo json_encode($resp);
     echo $resp;
 }
 ?>
