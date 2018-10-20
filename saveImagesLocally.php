@@ -1,10 +1,10 @@
 <?php 
 require 'gestionDatabase.php';
 
-$busqueda = 'earth';
+$busqueda = 'the%20earth';
 $page = 1;
 
-for ($page = 1; $x <= 30; $page++) {
+for ($page = 1; $page <= 15; $page++) {
     $strPage = strval($page);
 
     $curl = curl_init();
