@@ -1,5 +1,5 @@
 <?php 
-// Comunica con la api de la NASA y obtiene un json con imágenes y datos
+// Comunica con la api de la NASA y obtiene un json con imágenes y datos relativos a la imagen.
 ini_set('display_errors', 1);
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
